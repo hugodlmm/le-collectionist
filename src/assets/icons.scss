@@ -1,0 +1,74 @@
+.gg-heart,
+.gg-heart::after {
+  border: 2px solid;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  width: 10px;
+  height: 8px;
+  border-bottom: 0;
+}
+
+.gg-heart {
+  box-sizing: border-box;
+  position: relative;
+  transform: translate(
+      calc(-10px / 2 * var(--ggs, 1)),
+      calc(-6px / 2 * var(--ggs, 1))
+    )
+    rotate(-45deg) scale(var(--ggs, 1));
+  display: block;
+}
+
+.gg-heart::after,
+.gg-heart::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.gg-heart::after {
+  right: -9px;
+  transform: rotate(90deg);
+  top: 5px;
+}
+
+.gg-heart::before {
+  width: 11px;
+  height: 11px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  left: -2px;
+  top: 3px;
+}
+
+.gg-heart.fill,
+.gg-heart.fill::after,
+.gg-heart.fill::before {
+  background-color: black;
+}
+
+.gg-chevron-right {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-right::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 4px;
+}
