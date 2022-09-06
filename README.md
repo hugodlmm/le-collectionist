@@ -8,7 +8,7 @@ $ npm install
 or 
 $ npm install --legacy-peer-deps
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:8080
 $ npm run dev
 
 # build for production and launch server
